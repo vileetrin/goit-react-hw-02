@@ -1,4 +1,4 @@
-export default function Feedback({ values: { good, neutral, bad }, total }) {
+export default function Feedback({ values: { good, neutral, bad }, total, positiveValue }) {
   return (
     <div>
       <ul>
@@ -6,6 +6,7 @@ export default function Feedback({ values: { good, neutral, bad }, total }) {
         <li>Neutral: {neutral}</li>
         <li>Bad: {bad}</li>
         <li>Total: {total}</li>
+        <li>Positive: {positiveValue}%</li>
       </ul>
     </div>
   );
